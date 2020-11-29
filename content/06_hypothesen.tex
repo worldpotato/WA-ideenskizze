@@ -1,15 +1,32 @@
 \chapter{Hypothesen}
 
-Die zwei unterschiedlichen Übertragungsmedien bieten unterschiedliche Vor- und Nachteile.
+Die Übertragung von Photonen über Lichtwellenleiter ist eine gut erforschte Methode und das Medium selbst ist seit Jahren in Nutzung.
+Aber die Übertragung von Photonen über die Luft steckt noch in den Kinderschuhen.
+Trotzdem lassen sich aufgrund vom verwendeten Medium auf die Eigenschaften der zwei Methoden schließen.
+
+Ein wichtiger Aspekt bei einem Quantennetzwerk ist die Sicherheit der Übertragung, da solche Netzwerke meist dazu erstellt werden um eine nicht abhörbare Verbindung zu garantieren.
+Die Sicherheit des Netzwerkes ergibt sich durch die Art und Weise wie mittels \ac{QKD} der Schlüssel zum Verschlüsseln erstellt wird.
+Aber in Vergangenheit wurde bewiesen, dass der Prozess gestört werden kann, wenn der Angreifer direkt an das übertragende Medium gelangen kann\cite{Fei2018QuantumMA}.
+
 Glasfaser bietet die Möglichkeit das Medium geschützt vor unbefugten Zugriff zu verlegen.
 Das bedeutet, dass ein Glasfaser Kabel speziell für diese Verbindung verlegt wird.
-Das bedeutet, der Aufwand und die Kosten für die Inbetriebnahme des Netzwerkes steigen.
-Alternativ kann unter Umständen auch auf vorhandene Infrastruktur zurückgegriffen werden, diese muss aber direkt zwischen den zwei Teilnehmern verlegt werden und darf nicht von den herkömmlichen Kommunikationsmitteln genutzt werden.
+Dies hat zu Folge, dass der Aufwand und die Kosten für die Inbetriebnahme des Netzwerkes steigen.
+
+Alternativ kann unter Umständen auch auf vorhandene Infrastruktur zurückgegriffen werden, diese muss aber direkt zwischen den zwei Teilnehmern verlegt werden und darf nicht von den herkömmlichen Kommunikationsmitteln genutzt werden, da die Endgeräte nicht geeignet sind.
 Dass ein physikalischer Zugriff durch die Installation weitestgehend ausgeschlossen wird macht es aufwendiger Angriffe auf die Verbindung auszuführen.
+
 Dagegen braucht eine Übertragung über Luft nur zwei Antennen, eine Auf der Sende, die andere auf der Empfänger Seite.
+Da zwischen den Antennen eine Sichtverbindung bestehen muss ist es gegebenen Falls nötig eine Relais Station aufzubauen um Hindernisse zu umgehen.
 Die Nutzung von dem shared medium Luft macht es einem Angreifer aber leicht, die Übertragung zu stören, manipulieren oder abzuhören.
 
-Daher wollen wir untersuchen, ob ein Quantennetzwerk über Luft genauso sicher ist, wie ein Quantennetzwerk über Lichtwellenleiter.
-Und ob der Gewinn an Sicherheit dem Aufwand und den Kosten der Installation entspricht.
+Neben der Sicherheit und dem Installationsaufwand sind auch die Kosten der Installation und des Betriebs wichtig.
+Die Antennen der sind der Witterung ausgesetzt und müssen regelmäßig gewartet bzw.~gepflegt werden.
 
-Des weiteren benötigt ein Netzwerk welches mittels Funktechnologie arbeitet mehr Energie beim betreiben des Netzwerkes und die Antennen müssen regelmäßig gewartet werden.
+Als weiterer Faktor im Vergleich der zwei Technologien muss auch die Zuverlässigkeit betrachtet werden.
+Aufgrund des physikalisch gesicherten Mediums sind Lichtwellenleiter sehr Zuverlässigkeit.
+Die Folgen bei einem Ausfall sind aber auch besonders stark.
+Hingegen kann es bei einer Übertragung über die Luft zu Verlusten von einzelnen Qubits kommen.
+Diese Verluste können durch Witterung, Tiere oder andere äußere Einflüsse hervorgerufen werden, allerdings sind die Verluste nicht unbedingt mit einem absoluten Verbindungsverlust verbunden und sind auch nicht immer dauerhaft.
+
+Daher wollen wir untersuchen, ob ein Quantennetzwerk über Luft kosteneffizienter realisiert werden kann ohne nennenswerte Abstriche bei der Sicherheit oder Zuverlässigkeit machen zu müssen.
+
