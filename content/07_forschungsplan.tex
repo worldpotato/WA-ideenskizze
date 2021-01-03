@@ -1,16 +1,75 @@
 \chapter{Forschungsplan}
 
-Um die zwei verschiedenen Techniken zu vergleichen soll ein Testnetzwerk aufgebaut werden, welches genutzt werden soll um diese hinsichtlich ihrer verschiedenen Eigenschaften zu testen.
-Das Netzwerk soll zwei Nachbargebäude der Hochschule verbinden um als Prototyp für größere Netzwerke dienen zu können.
-Ein Großteils des Forschungsaufwandes wird während des Aufbaus und der Inbetriebnahme, vor allem hinsichtlich der Messbarkeit der zu ermittelnden Kenngrößen, betrieben.
+Folgend wird beschrieben zu welchem Zeitpunkt mit welchen Methoden die Messwerte erhoben werden um im Anschluss die zwei Technologien miteinander vergleichen.
 
-Während dem Aufbau und Betrieb werden sowohl der Aufwand als auch alle Kosten dokumentiert und verglichen.
+Um die zwei verschiedenen Technologien zu vergleichen sollen zwei Testnetzwerke aufgebaut werden.
+Jeweils eines pro Technologie.
+Diese Netzwerke werden genutzt um sie hinsichtlich ihrer verschiedenen Eigenschaften zu testen.
+Jedes Netzwerk wird dabei zwei Nachbargebäude der Hochschule verbinden um als Prototyp für ein größeres Netzwerk dienen zu können.
+Zur Vergleichbarkeit werden für beide Netzwerke die selben Endpunkte definiert.
 
-In der einjährigen Testphase werden Kenngrößen wie Datendurchsatz, Zuverlässigkeit und Energiebedarf ermittelt.
+\section{Inbetriebnahme}\label{inbetriebnahme}
+
+Ein Teil des Forschungsaufwandes wird dabei schon während des Baus und der Inbetriebnahme geleistet.
+Dabei werden verschiedene Phasen unterschieden.
+
+\begin{description}
+    \item [Planung des Standorts der Endpunkte]\hfill \\
+        In dieser Phase werden die Standorte der zwei Endpunkte, welche von beiden Netzwerken genutzt werden, geplant.
+    \item [Planung des Transportwegs]\hfill \\
+        Die Planung des Transportwegs umfasst den Weg der Datenleitungen und die Standorte von benötigter Hardware.
+    \item [Installation der Kommunikationshardware]
+        In dieser Phase wird die Leitung und benötigte Hardware aufgestellt.
+    \item [Installation der Endpunkte]
+        Diese Phase beinhaltet die Installation von den Computern und der Hardware, welche benötigt wird weitere Tests durchzuführen.
+    \item [Einrichten der Netzwerke]
+        Nachdem die Hardware bereit ist, muss die Software zum Betreiben der Netzwerke eingerichtet werden. Dies geschieht in dieser Phase.
+    \item [Abschließende Funktionstests]
+        Die Abschließenden Funktionstests haben die Aufgabe Probleme im weiteren Verlauf zu vermeiden.
+        In dieser Phase kann es zu Nacharbeiten kommen, welche die Phase verlängern.
+\end{description}
+
+Für jeden der Schritte werden mehrere Vergleichsgrößen dokumentiert und anschließend gewichtet gewertet.
+
+\begin{itemize}
+    \item Anzahl der nötigen Kommunikationspartner
+    \item Personenstunden
+    \item Personalkosten
+    \item Materialkosten
+    \item Benötigte Zeit für Planung
+    \item Benötigte Zeit für Installation
+    \item Benötigte Zeit für Einrichtung
+    \item Ergebnisse des Funktionstests
+\end{itemize}
+
+\section{Experimente}
+
+Im Anschluss an den Bau und der Inbetriebnahme werden Experimente durchgeführt.
+In der einjährigen Phase der Experimente werden Kenngrößen wie Datendurchsatz, Zuverlässigkeit und Energiebedarf ermittelt.
 Zusätzlich soll die Sicherheit mit mehreren Experimenten untersucht werden.
-Hierzu sollen bereits gefundene Sicherheitslücken ausgenutzt und hinsichtlich ihrer Wirksamkeit geprüft werden.
 
-Der Aufwand für die Attacken und der Erfolg dieser wird in Relation gesetzt um eine Wahrscheinlichkeit für eine reale Durchführung eines solchen Angriffes abschätzen zu können.
+Der Datendurchsatz wird mittels einem eigenen Skript getestet.
+Dieses nutzt eine \ac{TCP} Verbindung um mehrere definierte Pakete vom Sender zum Empfänger und zurück zum Sender zu verschicken.
+Durch die \ac{TCP} Verbindung wird sichergestellt, dass die Nettodatenrate gemessen wird, welche für eine Einschätzung der Geschwindigkeit während einer Vollständige Kommunikation relevant ist.
+Dieses Skript wird regelmäßig ausgeführt um eine Entwicklung über die gesamte Phase hinweg zu dokumentieren.
 
-Die Wahrscheinlichkeit eines Angriffes wird anschließend mit den anderen Kenngrößen ins Verhältnis gesetzt um die Verhältnismäßigkeit von Nutzen und Aufwand darzustellen.
+Um die Zuverlässigkeit vergleichen zu können werden alle nötigen Wartungsarbeiten und Ausfälle sowie Aufwände für diese Dokumentiert.
+Diese werden zusammen mit den Kosten und Aufwänden der Inbetriebnahme betrachtet und gewertet.
+
+Während der gesamten Zeit wird der Energiebedarf aller Komponenten gemessen und zusammen mit der aktuellen Last des Netzwerkes.
+Allerdings wird der Energiebedarf nicht dem eines Netzwerkes im operativen Einsatz entsprechen.
+Allerdings ist es durch die Betrachtung des Energiebedarf abhängig von der Last möglich den Energiebedarf für operative Netzwerke zuverlässig zu schätzen.
+
+Der größte Aufwand in der Experiment Phase werden die Experimente zur Sicherheit der Netzwerke beanspruchen.
+In den Experimenten werden bekannte Sicherheitslücken der jeweiligen Technologie verwendet um an den Schlüssel zu gelangen.
+Während der Durchführung der Experimenten werden, genauso wie bei der Inbetriebnahme, alle Kosten, Aufwände und die Dauer dokumentiert.
+Im Fall von einer Beschädigung der Hardware durch die Experimente, werden die anfallenden Kosten für die Reparatur nicht in die Wartungskosten des Netzwerkes eingerechnet.
+Der Vergleich der Netzwerke in Bezug auf die Sicherheit erfolgt anhand des Erfolgs der Angriffe, genauso wie den erhobenen Daten während der Durchführung des Angriffes.
+
+\section{Auswertung}
+
+Nach einem Jahr werden alle Ergebnisse gesammelt und ausgewertet.
+Die in Kapitel~\ref{forschungsstand} bereits beschriebenen Eigenschaften zeigen, dass die zwei Technologien sehr verschieden sind.
+In der Auswertung werden die in Sektion~\ref{inbetriebnahme} beschriebenen Eigenschaften zusammen mit den Betriebskosten und den Ergebnissen der Experimente gegenübergestellt.
+Trotz der großen Unterschiede werden die einzelnen Eigenschaften gewichtet um am Ende eine Empfehlung für die Hochschule München aussprechen zu können.
 
