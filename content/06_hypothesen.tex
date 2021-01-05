@@ -1,32 +1,30 @@
 \chapter{Hypothesen}
 
-Die Übertragung von Photonen über Lichtwellenleiter ist eine gut erforschte Methode und das Medium selbst ist seit Jahren in Nutzung.
-Aber die Übertragung von Photonen über die Luft steckt noch in den Kinderschuhen.
-Trotzdem lassen sich aufgrund vom verwendeten Medium auf die Eigenschaften der zwei Methoden schließen.
+Die Übertragung von Photonen über Lichtwellenleiter ist eine gut erforschte Methode und das Medium selbst ist seit Jahren in Nutzung.Aauch die Übertragung von Photonen über die Luft konnte inzwischen realisiert und getestet werden und ist der Marktreife immer näher.
+Trotzdem haben beide Methoden ihre Grenzen. Während das Signal bei Lichwtwellenleitern bisher nicht weiter als 20 km für \ac{QKD} genutzt werden kann, wir die Übertragung über die Atmosphäre tagsüber so stark gestört, dass die Reichweite bisher ähnlich groß ist.
 
-Ein wichtiger Aspekt bei einem Quantennetzwerk ist die Sicherheit der Übertragung, da solche Netzwerke meist dazu erstellt werden um eine nicht abhörbare Verbindung zu garantieren.
-Die Sicherheit des Netzwerkes ergibt sich auch durch die Art und Weise des Schlüsselaustauschs.
-Aber in Vergangenheit wurde bewiesen, dass der Prozess gestört werden kann, wenn der Angreifer direkt an das übertragende Medium gelangen kann\cite{Fei2018QuantumMA}.
+Wie bereits erwähnt wichtiger Aspekt bei einem Quantennetzwerk ist die Sicherheit der Übertragung, da solche Netzwerke meist dazu erstellt werden um eine nicht abhörbare Verbindung zu garantieren.
+Die Sicherheit des Netzwerkes hängt allerdings stark von der Implementierung der Methoden bzw. der Umgebung ab in der Sie implementiert werden. Ein Computersystem und sogar das Übertragungsmedium bieten Angriffsvektoren, welche teilweise viel trivialer sind als die verwendeten quantenphysikalischen Effekte.
+Allerdings wurde in Vergangenheit wurde bewiesen, dass auch der quantenphysikialische Prozess der Schlüsselübertragung gestört werden kann, wenn der Angreifer direkt an das übertragende Medium gelangen kann\cite{Fei2018QuantumMA}. Diese Sicherheitsaspekte müssen bei einer konkreten Implementierung weiter erforscht werden.
 
-Glasfaser bietet die Möglichkeit das Medium geschützt vor unbefugten Zugriff zu verlegen.
+Glasfaser bietet die Möglichkeit das Medium physikalisch vor unbefugtem Zugriff zu schützen.
 Das bedeutet, dass ein Glasfaser Kabel speziell für diese Verbindung verlegt wird.
-Dies hat zu Folge, dass der Aufwand und die Kosten für die Inbetriebnahme des Netzwerkes steigen.
+Dies hat zu Folge, dass der Aufwand und die Kosten für die Inbetriebnahme des Netzwerkes sehr stark steigen.
 
 Alternativ kann unter Umständen auch auf vorhandene Infrastruktur zurückgegriffen werden, diese muss aber direkt zwischen den zwei Teilnehmern verlegt werden und darf nicht von den herkömmlichen Kommunikationsmitteln genutzt werden, da die Endgeräte nicht geeignet sind.
-Dass ein physikalischer Zugriff durch die Installation weitestgehend ausgeschlossen wird macht es aufwendiger Angriffe auf die Verbindung auszuführen.
+Dass ein physikalischer Zugriff durch die Installation weitestgehend ausgeschlossen wird es aufwendiger Angriffe auf die Verbindung auszuführen.
 
-Dagegen braucht eine Übertragung über Luft nur zwei Übertragungseinheiten, eine Auf der Sende, die andere auf der Empfänger Seite.
+Dagegen braucht eine Übertragung über Luft nur zwei Übertragungseinheiten, eine auf der Sender-, die andere auf der Empfänger Seite.
 Da für die Übertragung eine Sichtverbindung bestehen muss ist es gegebenen Falls nötig eine Relais Station aufzubauen um Hindernisse zu umgehen.
-Die Nutzung von dem shared medium Luft macht es einem Angreifer aber leicht, die Übertragung zu stören, manipulieren oder abzuhören.
+Die Nutzung von dem shared medium Luft macht es einem Angreifer aber möglich, die Übertragung zu stören und begrenzt unter Umständen die Wahl der Übertragungswege stark. Auch dies Hypothese müssen bei einer konkreten Implementierung weiter untersucht und erprobt werden.
 
-Neben der Sicherheit und dem Installationsaufwand sind auch die Kosten der Installation und des Betriebs wichtig.
-Die Übertragungseinheiten sind der Witterung ausgesetzt und müssen regelmäßig gewartet bzw.~gepflegt werden.
+Neben der Sicherheit und dem Installationsaufwand sind auch die Kosten der Instandsetzung und des Betriebs wichtig um die Wirtschaftlichkeit der beiden Methoden zu erörtern und vergleichen zu können.
+Die Übertragungseinheiten sind der Witterung ausgesetzt und müssen regelmäßig gewartet bzw. gepflegt werden.
 
 Als weiterer Faktor im Vergleich der zwei Technologien muss auch die Zuverlässigkeit betrachtet werden.
-Aufgrund des physikalisch gesicherten Mediums sind Lichtwellenleiter sehr Zuverlässigkeit.
-Die Folgen bei einem Ausfall sind aber auch besonders stark.
-Hingegen kann es bei einer Übertragung über die Luft zu Verlusten von einzelnen Qubits kommen.
+Aufgrund des physikalisch gesicherten Mediums sind Lichtwellenleiter gegen äußere Einflüsse sicher und haben konstante Übertragungsbedingungen.
+
+Hingegen kann es bei einer Übertragung über die Luft zu Umgebungseinflüssen kommen.
 Diese Verluste können durch Witterung, Tiere oder andere äußere Einflüsse hervorgerufen werden, allerdings sind die Verluste nicht unbedingt mit einem absoluten Verbindungsverlust verbunden und sind auch nicht immer dauerhaft.
 
-In Anbetracht genannter Faktoren, soll die Möglichkeit einer praktikablen, alternativen Realisierung eines Quantennetzwerks ohne Glasfaser zwischen Gebäuden des Campus Lothstraße der Hochschule München erörtert werden.
-
+In Anbetracht genannter Faktoren, soll die Möglichkeit einer praktikablen Realisierung eines Quantennetzwerks ohne Glasfaser zwischen Gebäuden des Campus Lothstraße der Hochschule München erörtert werden. Hierzu muss mit einer konkreten Glasfaseimplementierung verglichen werden um säntliche Betriebsfaktoren außerhalb von Laborbedingungen ind einem praxisszenario zu ermitteln zu testen und gegeneinander abwägen zu können.
