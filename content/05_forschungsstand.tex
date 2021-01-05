@@ -57,16 +57,30 @@ Die Standardmethode für verschlüsselte Kommunikation in Quantennetzwerken ist 
 Hier wird die grundlegende Materie des Lichts, Photonen, übertragen um Informationen weiter zu geben.
 Diese Übertragung kann nicht ohne Rauschen stattfinden, sodass ein Übertragung bis maximal 100 km möglich ist\cite{Shen2018}.
 
-Des weiteren findet die Übertragung immer von einem Teilnehmer zu einem zweiten statt und ein Multicast, welcher eine Information von einem Sender an mehrere Empfänger schickt, ist in Quantennetzwerken mit \ac{QKD} nicht etabliert.
-Stattdessen werden die Informationen individuell an jeden einzelnen Empfänger gesendet oder Daten werden von einem Verteiler an die verschiedenen Empfänger verteilt.
-Dabei muss ein Schlüsselaustausch zwischen dem ersten Teilnehmer und dem Verteiler stattfinden und ein zweiter Schlüsselaustausch zwischen dem Verteiler und dem zweiten Teilnehmer.
+\begin{figure}[htbp] 
+  \centering
+     \includegraphics[width=0.5\textwidth]{img/lwl.png}
+     \caption{Der Aufbau einer Glasfaser: 1 - Kern, 2 - Mantel, 3 - Schutzbeschichtung, 4 - Äußere Hülle\\
+            CC BY-SA 3.0 Bob Mellish}
+            \label{fig:lwlAufbau}
+\end{figure}
+
+Diese Technik wird schon in der klassischen Kommunikation verwendet, wesshalb das Medium schon sehr weit verbreitet ist.
+In Abbildung \ref{fig:lwlAufbau} wird der klassischer Aufbau eines \ac{LWL} skizziert.
+Der Durchmesser des Kerns ist dabei abhängig von dem geplanten Einsatzbereich.
+
+Dabei kommen generell zwei verschiedene Übertragungsarten zur Anwendung, Multimode und Singlemode.
+Bei Singlemode wird dabei nur ein Lichtstrahl verwendet, wesshalb ein geringerer Durchmesser des Kerns verwendet werden kann.
+Im Vergleich dazu werden bei Multimode mehrere Strahlen mit veschiedenen Frequenzen versendet~\cite{Lichtwellenleiter}.
+Diese verschiedenen Modi gibt es nicht nur bei der klassischen Übertragung, sondern auch bei der Übertragung in Quantennetzwerken.
+Wobei Multimode eine höhere Präzession ermöglicht\cite{VanMeter2014}
+
+Die Verbindung wird bei Glasfaser immer zwischen zwei Teilnehmern hergestellt und ein Multicast, welcher eine Information von einem Sender an mehrere Empfänger schickt, ist dort nicht ohne weitere aktiver Hardware möglich.
+In Quantennetzwerken mit \ac{QKD} wird eine Verschlüsselung immer zwischen den Teilnehmern etabliert.
+Um die Daten an ein ganzes Netzwerk zu senden muss ein Schlüsselaustausch zwischen dem ersten Teilnehmer und dem Verteiler stattfinden und ein zweiter Schlüsselaustausch zwischen dem Verteiler und dem zweiten Teilnehmer.
 Somit ist die Übertragung auf dem Verteiler unverschlüsselt und deshalb muss dem Verteiler vertraut werden\cite{Qiu2018}.
 
 Dieses Jahr wurde ein Netzwerk zwischen acht Teilnehmern realisiert, welches mit multiplexern und demultiplexern arbeitet.
 Das hat den Vorteil, dass keine aktives verteilen der einzelnen Daten geschehen muss\cite{Siddarth2020}.
 
-Die Übertragung in einem Lichtwellenleiter kann dabei entweder im single-mode als auch im multi-mode stattfinden.
-Beim single-mode wird ein einzelner Photonenstrahl vom Sender in den Lichtwellenleiter gegeben, was ein dünneres Kabel erlaubt.
-Allerdings macht die mulit-mode Methode eine höhere Präzession möglich\cite{VanMeter2014}.
-Beide Möglichkeiten werden aktuell schon in klassischen Netzwerken genutzt und sind weit verbreitet.
 
